@@ -22,6 +22,28 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## What has been done?
+
+To test the framework, we started with a basic installation. From there, we added a database with PostgreSQL and Docker to the project.
+
+For now, the project has a product entity, which has an endpoint to create a new product and another endpoint to get a list of all products.
+
+To launch the project, you can use the `make` command, and it will raise a Docker container with everything you need.
+
+To **add a product**, you can make the following call
+
+> POST: `http://localhost:3000/product`
+> Body:
+> {
+> "id": "b255043c-8dfd-11ee-b9d1-0242ac120002",
+> "name": "Product Number One",
+> "price": 15
+> }
+
+To **list the products**, you can use the following endpoint:
+
+> GET: `http://localhost:3000/product`
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
